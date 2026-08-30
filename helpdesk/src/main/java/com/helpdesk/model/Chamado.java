@@ -8,12 +8,12 @@ public class Chamado
     private Integer idEquipamento;
     private String titulo;
     private String descricao;
-    private String prioridade;
-    private String status;
+    private Prioridade prioridade;
+    private StatusChamado status;
     private LocalDateTime criadoEm;
     private LocalDateTime resolvidoEm;
     
-    public Chamado(Integer idEquipamento, String titulo, String descricao, String prioridade, String status, LocalDateTime criadoEm)
+    public Chamado(Integer idEquipamento, String titulo, String descricao, Prioridade prioridade, StatusChamado status, LocalDateTime criadoEm)
     {
         idChamado = 0;
         this.idEquipamento = idEquipamento;
@@ -65,22 +65,22 @@ public class Chamado
         this.descricao = descricao;
     }
 
-    public String getPrioridade() 
+    public Prioridade getPrioridade() 
     {
         return prioridade;
     }
 
-    public void setPrioridade(String prioridade) 
+    public void setPrioridade(Prioridade prioridade) 
     {
         this.prioridade = prioridade;
     }
 
-    public String getStatus() 
+    public StatusChamado getStatus() 
     {
         return status;
     }
 
-    public void setStatus(String status) 
+    public void setStatus(StatusChamado status) 
     {
         this.status = status;
     }

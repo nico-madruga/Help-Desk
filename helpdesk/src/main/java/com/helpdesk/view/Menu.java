@@ -1,5 +1,7 @@
 package com.helpdesk.view;
 
+import com.helpdesk.model.Setor;
+
 import java.util.Scanner;
 
 public class Menu 
@@ -123,5 +125,15 @@ public class Menu
                     break;
                 }
         }
+    }
+
+    public void cadastrarSetor()
+    {
+        System.out.println("Insira o nome do Setor: ");
+        String nome = scanner.nextLine();
+
+        var setor = new Setor(0, nome);
+
+        
     }
 }
