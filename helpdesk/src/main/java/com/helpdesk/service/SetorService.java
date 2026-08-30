@@ -12,5 +12,6 @@ public class SetorService
             throw new BusinessException("Nome é um campo obrigatório.");
         }
         
+        
     }
 }
