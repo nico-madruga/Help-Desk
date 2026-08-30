@@ -11,12 +11,6 @@ public class Setor
         this.nome = nome;
     }
 
-    public Setor()
-    {
-        this.setorId = 0;
-        this.nome = null;
-    }
-
     public int getSetorId()
     {
         return setorId;
